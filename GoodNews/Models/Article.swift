@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Article: Codable {
+struct Article: Decodable {
     let title: String?
     let description: String?
 }
 
-struct ArticleList: Codable {
+struct ArticleList: Decodable {
     let articles: [Article]
 }
 
